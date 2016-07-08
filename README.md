@@ -1,6 +1,6 @@
 # hankyul-develop
 
-> A Vue.js project
+> 한결ITS 홈페이지 리뉴얼 project
 
 ## Build Setup
 
