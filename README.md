@@ -1,17 +1,17 @@
 # hankyul-develop
 
-> A Vue.js project
+> 한결입찰 템플릿 제작
 
-## Build Setup
+## Build 설정
 
 ``` bash
-# install dependencies
+# 설치
 npm install
 
-# serve with hot reload at localhost:8080
+# 개발실행과 접속주소 localhost:8080
 npm run dev
 
-# build for production with minification
+# 생산환경 생성
 npm run build
 
 # run unit tests
@@ -23,5 +23,6 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+한결입찰: http://bidhk.co.kr
+한결ITS: http://hkits.kr
+iNBAY쇼핑몰: http://inbay.kr
