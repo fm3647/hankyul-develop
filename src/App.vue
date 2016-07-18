@@ -18,7 +18,7 @@
       </div>
       <div class="uk-navbar hk-navbar">
         <div class="uk-container uk-container-center">
-          <a href="#" class="uk-navbar-brand"><img class="logo" src="./assets/img/logo-w.svg" alt="logo"></a>
+          <a href="#" class="uk-navbar-brand logo"><img src="./assets/img/logo-w.svg" alt="logo"></a>
           <ul class="uk-navbar-nav">
             <li><a href="#">시설입찰</a></li>
             <li><a href="#">용역입찰</a></li>
@@ -29,9 +29,7 @@
         </div>
       </div>
   </header>
-  <div id="main">
-asdf
-  </div>
+  <Main></Main>
   <div class="hk-block-footer">
     <div class="uk-container uk-container-center">
       <div class="uk-grid">
@@ -101,13 +99,14 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-@charset "utf-8";
+
+<style lang="scss">
 // *------------
 // * Color Settings
 // *------------
 $color-blue:#339EE2 !default;
 $color-blue-darken:darken($color-blue, 5%);//#1f93dc
+$color-blue-darken-plus:darken($color-blue-darken, 5%);//#1f93dc
 $color-white:white;
 $color-gray:darken($color-white, 46.8%);
 $color-gray-darken:darken($color-white, 80%);
@@ -121,6 +120,7 @@ $text-gray:#9b9b9b;
 // *------------
 
 // * Header
+.uk-container {min-width:1200px !important;}
 .header {
   .hk-toptool {
     background: $color-blue-darken;
@@ -128,15 +128,26 @@ $text-gray:#9b9b9b;
     height:28px;line-height: 28px;
     .uk-navbar {background-color: $color-blue-darken;}
     .uk-navbar-nav {
-      li a {color:$color-white;line-height: 28px;height:28px; cursor: pointer;}
+      li {
+        a {font-size: 12px;color:$color-white;line-height: 28px;height:28px; cursor: pointer;}
+      }
+      :hover,:focus,:active {background: $color-blue-darken-plus;}
     }
   }
   .hk-navbar{
     background: $color-blue;
     line-height: 62px;height:62px;
-    .uk-navbar-nav li a {color:$color-white;line-height: 62px;height:62px;cursor: pointer;}
+    .uk-navbar-nav {
+      li {
+        a {font-size: 16px;color:$color-white;line-height: 62px;height:62px;cursor: pointer;}
+      }
+      :hover,:focus,:active{background: $color-blue-darken;}
+    }
   }
-  .logo {width:148px;}
+  .logo {
+    width:148px;
+    margin-right: 20px;
+  }
 }
 .hero {height: 382px;background: url(./assets/img/main-intro.jpg) no-repeat;}
 
@@ -146,7 +157,10 @@ $text-gray:#9b9b9b;
   padding:60px 0 30px 0;
   .uk-nav {
     .uk-nav-header{color:$color-gray-darken;font-size:18px;font-weight: normal;padding-bottom: 20px;}
-    a {color:$color-gray;font-size:14px;}
+    a {
+      color:$color-gray;font-size:14px;
+    }
+    a:hover {color:$color-blue;}
   }
   .hk-block-contact {
     h5 {font-size: 18px;}
