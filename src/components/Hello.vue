@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="header">
     <h1 class="uk-h1">{{ msg }}<span> <i class="uk-icon-train"></i> Sass</span></h1>
   </div>
   <ul class="uk-tab" data-uk-tab>
