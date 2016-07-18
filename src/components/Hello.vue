@@ -4,7 +4,7 @@
   </div>
   <ul class="uk-tab" data-uk-tab>
       <li class="uk-active"><a href="">23234</a></li>
-      <li><a href="">233ㄷ23</a></li>
+      <li><a href="">Test 작업실시</a></li>
       <li><a href="">.asdfasdf.</a></li>
       <li class="uk-disabled"><a href="">.asdfasdfsf</a></li>
   </ul>
