@@ -106,7 +106,7 @@ export default {
 // *------------
 $color-blue:#339EE2 !default;
 $color-blue-darken:darken($color-blue, 5%);//#1f93dc
-$color-blue-darken-plus:darken($color-blue-darken, 5%);//#1f93dc
+$color-blue-darken-plus:darken($color-blue-darken, 5%);//#1c84c6
 $color-white:white;
 $color-gray:darken($color-white, 46.8%);
 $color-gray-darken:darken($color-white, 80%);
@@ -118,6 +118,38 @@ $text-gray:#9b9b9b;
 // *------------
 // * Default Style Start
 // *------------
+a,
+.uk-tab > li > a {color:$color-gray-darken;}
+
+a:hover,
+.uk-tab > li:hover > a {
+  color:$color-blue;
+}
+
+.uk-tab-left > li.uk-active > a,
+.uk-tab-right > li.uk-active > a {
+  border-color: transparent;
+  background: transparent;
+  color:$color-blue;
+}
+
+.uk-tab-left > li.uk-active > a {
+
+}
+.uk-tab-left > li:nth-child(n+2) > a,
+.uk-tab-right > li:nth-child(n+2) > a {
+  margin-top: 0;
+}
+.uk-tab {
+  li {
+    a:hover,a:focus,.uk-open > a{
+      color:$color-blue;
+      background: transparent;
+      border-color: transparent;
+    }
+  }
+  :hover,:focus,.uk-open,.uk-active {border-right:1px solid $color-blue;}
+}
 
 // * Header
 .uk-container {min-width:1200px !important;}
