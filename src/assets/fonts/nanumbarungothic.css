@@ -1,9 +1,9 @@
-/* 
+/*
  * Nanum Barun Gothic Web Fonts
  * https://github.com/hiun/NanumBarunGothic
- * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
  */
- 
+
 @font-face {
   font-family: 'Nanum Barun Gothic';
   font-style: normal;
@@ -55,4 +55,3 @@
        url(./NanumBarunGothicBold.woff) format('woff'),
        url(./NanumBarunGothicBold.ttf) format('truetype');
 }
-
