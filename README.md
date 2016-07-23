@@ -23,6 +23,8 @@ npm run e2e
 # run all tests
 npm test
 ```
+한결입찰 개발중페이지:http://hkits.kr/bidhk-dev/
+
 한결입찰: http://bidhk.co.kr
 한결ITS: http://hkits.kr
 iNBAY쇼핑몰: http://inbay.kr
