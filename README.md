@@ -1,10 +1,10 @@
-# hankyul-develop
+# Test
 
 > 한결입찰 템플릿 제작
 
 ## Build 설정
 
-``` bash
+```bash
 # 설치
 npm install
 
@@ -23,3 +23,4 @@ npm run e2e
 # run all tests
 npm test
 ```
+
